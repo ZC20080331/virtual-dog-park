@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200">
+  <!-- Original Golden Retriever illustration created for this project -->
+  <ellipse cx="120" cy="187" rx="62" ry="7" fill="#00000022"/>
+  <path d="M170 138 Q196 126 192 104 Q188 96 180 104 Q176 122 164 130 Z" fill="#e7b56a" stroke="#b98c45" stroke-width="2"/>
+  <ellipse cx="120" cy="152" rx="46" ry="32" fill="#e7b56a" stroke="#b98c45" stroke-width="2"/>
+  <ellipse cx="120" cy="156" rx="26" ry="24" fill="#f6dcae"/>
+  <ellipse cx="88" cy="181" rx="13" ry="9" fill="#e7b56a" stroke="#b98c45" stroke-width="2"/>
+  <ellipse cx="152" cy="181" rx="13" ry="9" fill="#e7b56a" stroke="#b98c45" stroke-width="2"/>
+  <circle cx="120" cy="88" r="50" fill="#e7b56a" stroke="#b98c45" stroke-width="2"/>
+  <path d="M74 58 Q58 62 58 94 Q58 120 76 118 Q86 114 82 80 Q80 64 84 58 Z" fill="#c9953f"/>
+  <path d="M166 58 Q182 62 182 94 Q182 120 164 118 Q154 114 158 80 Q160 64 156 58 Z" fill="#c9953f"/>
+  <path d="M72 58 Q120 24 168 58 Q160 44 120 38 Q80 44 72 58 Z" fill="#c9953f"/>
+  <ellipse cx="120" cy="108" rx="24" ry="17" fill="#f6dcae"/>
+  <ellipse cx="120" cy="98" rx="10" ry="7" fill="#2e2620"/>
+  <path d="M120 105 L120 114 M120 114 Q110 121 105 115 M120 114 Q130 121 135 115" stroke="#2e2620" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M112 118 Q120 132 128 118 Z" fill="#d9776b"/>
+  <path d="M96 76 Q101 70 106 76" stroke="#2e2620" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M134 76 Q139 70 144 76" stroke="#2e2620" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="86" cy="96" rx="7" ry="4" fill="#e8a08a" opacity="0.5"/>
+  <ellipse cx="154" cy="96" rx="7" ry="4" fill="#e8a08a" opacity="0.5"/>
+</svg>

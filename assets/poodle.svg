@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200">
+  <!-- Original Poodle illustration created for this project -->
+  <ellipse cx="120" cy="187" rx="58" ry="7" fill="#00000022"/>
+  <path d="M166 138 Q188 130 186 112 Q184 104 176 112 Q172 124 160 132 Z" fill="#f5d9a8" stroke="#d8ab6a" stroke-width="2"/>
+  <circle cx="188" cy="110" r="10" fill="#eec27e" stroke="#d8ab6a" stroke-width="2"/>
+  <ellipse cx="120" cy="152" rx="42" ry="30" fill="#f5d9a8" stroke="#d8ab6a" stroke-width="2"/>
+  <ellipse cx="120" cy="158" rx="22" ry="18" fill="#fdf3df"/>
+  <ellipse cx="88" cy="181" rx="13" ry="9" fill="#f5d9a8" stroke="#d8ab6a" stroke-width="2"/>
+  <ellipse cx="152" cy="181" rx="13" ry="9" fill="#f5d9a8" stroke="#d8ab6a" stroke-width="2"/>
+  <circle cx="120" cy="92" r="46" fill="#f5d9a8" stroke="#d8ab6a" stroke-width="2"/>
+  <path d="M78 66 Q74 34 100 26 Q120 20 140 26 Q166 34 162 66 Q150 44 120 42 Q90 44 78 66 Z" fill="#eec27e"/>
+  <circle cx="92" cy="34" r="13" fill="#eec27e" stroke="#d8ab6a" stroke-width="2"/>
+  <circle cx="148" cy="34" r="13" fill="#eec27e" stroke="#d8ab6a" stroke-width="2"/>
+  <circle cx="120" cy="28" r="14" fill="#eec27e" stroke="#d8ab6a" stroke-width="2"/>
+  <circle cx="76" cy="104" r="14" fill="#eec27e" stroke="#d8ab6a" stroke-width="2"/>
+  <circle cx="164" cy="104" r="14" fill="#eec27e" stroke="#d8ab6a" stroke-width="2"/>
+  <ellipse cx="120" cy="112" rx="21" ry="15" fill="#fdf3df"/>
+  <ellipse cx="120" cy="103" rx="9" ry="6.5" fill="#2e2620"/>
+  <path d="M120 109 L120 116 M120 116 Q112 122 108 118 M120 116 Q128 122 132 118" stroke="#2e2620" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="84" r="6.5" fill="#2e2620"/>
+  <circle cx="102" cy="82" r="2.2" fill="#ffffff"/>
+  <circle cx="140" cy="84" r="6.5" fill="#2e2620"/>
+  <circle cx="142" cy="82" r="2.2" fill="#ffffff"/>
+  <ellipse cx="86" cy="100" rx="7" ry="4" fill="#e8a08a" opacity="0.55"/>
+  <ellipse cx="154" cy="100" rx="7" ry="4" fill="#e8a08a" opacity="0.55"/>
+</svg>
