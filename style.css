@@ -1,31 +1,52 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  color: #2c2c2c;
-  background: #f7f4ef;
+  color: #3a332b;
+  background: #f2ede4;
   max-width: 1000px;
   margin: 0 auto;
   padding: 1.5rem;
 }
 
-header h1 { color: #5a4632; margin-bottom: 0.25rem; }
-.welcome { color: #6b6257; margin-bottom: 1.5rem; }
+/* Hero header */
+.hero {
+  background: #3e5c76;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2rem 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.hero h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+.welcome { color: #d7e2ec; max-width: 560px; }
 
-h2 { color: #5a4632; margin: 1.5rem 0 1rem; }
+h2 {
+  color: #3a332b;
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+  padding-left: 0.6rem;
+  border-left: 4px solid #7fa650;
+}
 
+/* Encyclopedia cards */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .card {
   background: #ffffff;
-  border: 1px solid #e3dccf;
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(58, 51, 43, 0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(58, 51, 43, 0.12);
 }
 
 .card img {
@@ -36,46 +57,116 @@ h2 { color: #5a4632; margin: 1.5rem 0 1rem; }
 }
 
 .card h3 { margin-bottom: 0.5rem; color: #3e5c76; }
+.card p { font-size: 0.92rem; margin-bottom: 0.3rem; }
 
-/* My Virtual Dog section */
-#adopt-form label, #adopt-form select, #adopt-form input { margin-right: 0.5rem; }
-#adopt-form { margin-bottom: 1rem; }
-
-#form-message { color: #b23b3b; margin-top: 0.5rem; }
-
-#dog-status {
+/* Panels (adopt form + dog card) */
+.panel {
   background: #ffffff;
-  border: 1px solid #e3dccf;
-  border-radius: 10px;
-  padding: 1rem;
-  max-width: 420px;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(58, 51, 43, 0.08);
+  max-width: 480px;
 }
 
-#dog-status img { width: 160px; display: block; margin-bottom: 0.5rem; }
-#dog-name { color: #3e5c76; margin-bottom: 0.5rem; }
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+.field { display: flex; flex-direction: column; gap: 0.25rem; }
+.field label { font-size: 0.85rem; color: #7a7061; }
 
+#adopt-form select, #adopt-form input {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #d8d0c2;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fbf9f5;
+}
+#adopt-form input:focus, #adopt-form select:focus {
+  outline: 2px solid #7fa650;
+  border-color: transparent;
+}
+
+#form-message { color: #b23b3b; margin-top: 0.6rem; font-size: 0.9rem; }
+
+/* Dog status card */
+#dog-status { display: flex; gap: 1.25rem; align-items: flex-start; }
+
+#dog-image {
+  width: 160px;
+  flex-shrink: 0;
+  background: #f2ede4;
+  border-radius: 12px;
+  padding: 0.5rem;
+  transition: width 0.3s;
+}
+
+#dog-name { color: #3e5c76; margin-bottom: 0.35rem; }
+#dog-status p { margin-bottom: 0.25rem; }
+
+.tag {
+  display: inline-block;
+  background: #e7eef5;
+  color: #3e5c76;
+  border-radius: 999px;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.8rem;
+  margin-right: 0.35rem;
+}
+.tag.stage { background: #eaf3de; color: #3b6d11; }
+
+/* Growth and happiness bars */
+.growth-bar-track {
+  background: #eee7db;
+  border-radius: 999px;
+  height: 12px;
+  width: 100%;
+  max-width: 240px;
+  margin: 0.4rem 0 0.8rem;
+}
+.growth-bar {
+  background: #7fa650;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s;
+}
+.growth-bar.happiness { background: #e0a13c; }
+
+/* Buttons */
 button {
   background: #3e5c76;
   color: #ffffff;
   border: none;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
-  margin-right: 0.4rem;
+  border-radius: 8px;
+  padding: 0.5rem 1.1rem;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  transition: background 0.15s, transform 0.1s;
 }
 button:hover { background: #2c4459; }
+button:active { transform: scale(0.97); }
+button.good { background: #7fa650; }
+button.good:hover { background: #63900f; }
+button.danger { background: #a0432f; }
+button.danger:hover { background: #7d3323; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.actions button { margin-top: 0; }
 
 .hidden { display: none; }
 
 footer {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   font-size: 0.85rem;
   color: #8a8071;
+  text-align: center;
 }
 
 /* Narrow screens: cards stack vertically */
 @media (max-width: 700px) {
   .cards { grid-template-columns: 1fr; }
+  #dog-status { flex-direction: column; }
+  .hero { padding: 1.5rem 1.25rem; }
 }

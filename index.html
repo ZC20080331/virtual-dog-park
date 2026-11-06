@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <h1>Virtual Dog Park</h1>
-    <p class="welcome">Welcome! Learn about three popular dog breeds before you adopt your own virtual friend.</p>
+    <p class="welcome">Learn about three popular breeds, then adopt and care for your own virtual friend.</p>
   </header>
 
   <main>
@@ -43,30 +43,46 @@
     <section id="my-dog">
       <h2>My Virtual Dog</h2>
 
-      <form id="adopt-form">
-        <label for="breed-select">Breed:</label>
-        <select id="breed-select" required>
-          <option value="Beagle">Beagle</option>
-          <option value="Golden Retriever">Golden Retriever</option>
-          <option value="Poodle">Poodle</option>
-        </select>
-
-        <label for="dog-name-input">Dog name:</label>
-        <input type="text" id="dog-name-input" maxlength="20" placeholder="e.g. Buddy" required>
-
-        <button type="submit" id="adopt-btn">Adopt</button>
+      <form id="adopt-form" class="panel">
+        <div class="field-row">
+          <div class="field">
+            <label for="breed-select">Breed</label>
+            <select id="breed-select" required>
+              <option value="Beagle">Beagle</option>
+              <option value="Golden Retriever">Golden Retriever</option>
+              <option value="Poodle">Poodle</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="dog-name-input">Dog name</label>
+            <input type="text" id="dog-name-input" maxlength="20" placeholder="e.g. Buddy" required>
+          </div>
+          <button type="submit" id="adopt-btn">Adopt</button>
+        </div>
         <p id="form-message" role="alert"></p>
       </form>
 
-      <div id="dog-status" class="hidden">
+      <div id="dog-status" class="panel hidden">
         <img id="dog-image" src="assets/beagle.svg" alt="Illustration of my virtual dog">
-        <h3 id="dog-name"></h3>
-        <p>Breed: <span id="dog-breed"></span></p>
-        <p>Day: <span id="dog-day"></span></p>
-        <p>Growth stage: <span id="dog-stage"></span></p>
-        <p>Happiness: <span id="dog-happiness"></span>/100</p>
-        <button id="feed-btn">Feed</button>
-        <button id="play-btn">Play</button>
+        <div class="dog-info">
+          <h3 id="dog-name"></h3>
+          <p><span class="tag" id="dog-breed"></span> <span class="tag stage" id="dog-stage"></span></p>
+          <p>Day: <strong id="dog-day"></strong></p>
+          <p>Happiness: <strong id="dog-happiness"></strong>/100</p>
+          <div class="growth-bar-track" aria-label="Happiness indicator">
+            <div id="happiness-bar" class="growth-bar happiness"></div>
+          </div>
+          <p>Growth</p>
+          <div class="growth-bar-track" aria-label="Growth indicator">
+            <div id="growth-bar" class="growth-bar"></div>
+          </div>
+          <div class="actions">
+            <button id="feed-btn" class="good">Feed</button>
+            <button id="play-btn" class="good">Play</button>
+            <button id="next-day-btn">Next Day</button>
+            <button id="start-over-btn" class="danger">Start Over</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
