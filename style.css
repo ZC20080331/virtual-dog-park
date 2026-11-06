@@ -13,7 +13,7 @@ body {
 header h1 { color: #5a4632; margin-bottom: 0.25rem; }
 .welcome { color: #6b6257; margin-bottom: 1.5rem; }
 
-h2 { color: #5a4632; margin: 1rem 0 1rem; }
+h2 { color: #5a4632; margin: 1.5rem 0 1rem; }
 
 .cards {
   display: grid;
@@ -36,6 +36,38 @@ h2 { color: #5a4632; margin: 1rem 0 1rem; }
 }
 
 .card h3 { margin-bottom: 0.5rem; color: #3e5c76; }
+
+/* My Virtual Dog section */
+#adopt-form label, #adopt-form select, #adopt-form input { margin-right: 0.5rem; }
+#adopt-form { margin-bottom: 1rem; }
+
+#form-message { color: #b23b3b; margin-top: 0.5rem; }
+
+#dog-status {
+  background: #ffffff;
+  border: 1px solid #e3dccf;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 420px;
+}
+
+#dog-status img { width: 160px; display: block; margin-bottom: 0.5rem; }
+#dog-name { color: #3e5c76; margin-bottom: 0.5rem; }
+
+button {
+  background: #3e5c76;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  margin-right: 0.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover { background: #2c4459; }
+
+.hidden { display: none; }
 
 footer {
   margin-top: 2rem;

@@ -39,10 +39,42 @@
         </article>
       </div>
     </section>
+
+    <section id="my-dog">
+      <h2>My Virtual Dog</h2>
+
+      <form id="adopt-form">
+        <label for="breed-select">Breed:</label>
+        <select id="breed-select" required>
+          <option value="Beagle">Beagle</option>
+          <option value="Golden Retriever">Golden Retriever</option>
+          <option value="Poodle">Poodle</option>
+        </select>
+
+        <label for="dog-name-input">Dog name:</label>
+        <input type="text" id="dog-name-input" maxlength="20" placeholder="e.g. Buddy" required>
+
+        <button type="submit" id="adopt-btn">Adopt</button>
+        <p id="form-message" role="alert"></p>
+      </form>
+
+      <div id="dog-status" class="hidden">
+        <img id="dog-image" src="assets/beagle.svg" alt="Illustration of my virtual dog">
+        <h3 id="dog-name"></h3>
+        <p>Breed: <span id="dog-breed"></span></p>
+        <p>Day: <span id="dog-day"></span></p>
+        <p>Growth stage: <span id="dog-stage"></span></p>
+        <p>Happiness: <span id="dog-happiness"></span>/100</p>
+        <button id="feed-btn">Feed</button>
+        <button id="play-btn">Play</button>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>Virtual Dog Park - a first-year programming lab project. Illustrations are project-created SVGs, not real photos.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
